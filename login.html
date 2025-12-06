@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Vishal Kumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-card">
+      <h1 class="login-title">Welcome back</h1>
+      <p class="login-subtitle">Log in to manage your projects and insights.</p>
+
+      <form class="login-form" id="loginForm">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <button type="button" class="toggle-password" id="togglePassword">
+              Show
+            </button>
+          </div>
+        </div>
+
+        <div class="form-row-bottom">
+          <label class="remember-me">
+            <input type="checkbox" id="rememberMe" />
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">Log in</button>
+
+        <p class="login-status" id="loginStatus"></p>
+
+        <p class="login-footer-text">
+          Don’t have an account?
+          <a href="#">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
